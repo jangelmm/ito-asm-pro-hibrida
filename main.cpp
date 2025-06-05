@@ -1,18 +1,23 @@
-// PROYECTO_DOS.CPP
-// Proyecto Completo Hibrido C++/Ensamblador para DOSBox en un solo archivo.
-// Optimizado para Turbo C++ 3.0.
-// Utiliza interrupciones reales del BIOS y DOS.
-// Comando de compilacion (ejemplo para Turbo C++):
-// TCC -ml -IC:\TC\INCLUDE -LC:\TC\LIB PROYECTO_DOS.CPP (Ajusta rutas de TC)
+/*
+PROGRAMACIÓN HIBRIDA ENTRE ASM Y C++
 
-#include <iostream.h> // Para cout, cin, endl
-#include <iomanip.h>  // Para setw, setfill, hex, dec
-#include <conio.h>    // Para clrscr(), getch(), kbhit()
-#include <dos.h>      // Para FP_SEG, FP_OFF
+Martinez Mendoza Jesus Angel
+
+Asignatura: Lenguaje de Interfaz
+Semestre: 6to
+Docente: Silva Martinez Dalia
+
+Fecha: Jun - 2025
+*/
+
+#include <iostream.h> 
+#include <iomanip.h>  
+#include <conio.h>    
+#include <dos.h>      
 
 // --- Estructuras ---
 
-struct Registers { // No se usa activamente, pero se mantiene por si acaso.
+struct Registers { 
     unsigned short ax, bx, cx, dx, si, di, ds, es, flags;
 };
 
